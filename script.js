@@ -1,3 +1,8 @@
+// Author: Darian Hughes
+// Date: 5/13/2024
+// Assignment: Final Project - Online File
+// script.js
+
 $('#menuClick').on('change', function() {
     if ($('#menuClick').is(':checked')) {
         $('.menuContainer').css('left', '50%');
