@@ -81,7 +81,6 @@ label{
 }
 
 input[type="checkbox"]{
-    -webkit-appearance: none;
     visibility: hidden;
     display: none;
     height: 100%;
