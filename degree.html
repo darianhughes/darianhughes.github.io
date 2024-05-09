@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiveStyles.css" media="screen and (max-width: 1024px)" />
 	<link rel="icon" href="images/favicon.png">
 	<link rel="shortcut-icon" href="favicon.png">
 	<title>Darian's Online Profile</title>
@@ -12,7 +13,7 @@
 
 <body>
 	<div id="navbar">
-		<h2 id="logo" data-text="Darian">Darian</h2>
+		<h2 id="logo" data-text="Degree">Degree</h2>
 		<div id="menuIcon">
 			<label>
                 <input id="menuClick" type="checkbox">
@@ -43,11 +44,11 @@
         </div>
         <div id="menuLine"></div>
         <div id="menuLinks">
-            <a href="#" class="menuLink">
+            <a href="index.html" class="menuLink">
                 <div class="underLine"></div>
                 <h1 id="menuLinkText">Home</h1>
             </a>
-            <a href="degree.html" class="menuLink">
+            <a href="#" class="menuLink">
                 <div class="underLine"></div>
                 <h1 id="menuLinkText">Degree</h1>
             </a>
@@ -79,40 +80,78 @@
         </div>
     </div>
 
-    <div id="header">
-        <div id="topRightContainer">
-            <div id="bubbleWrapper">
-                <span id="bubble"></span>
-                <span id="bubble"></span>
-                <span id="bubble"></span>
-                <span id="bubble"></span>
-                <span id="bubble"></span>
-                <span id="bubble"></span>
-                <span id="bubble"></span>
+    <div id="topLeftContainer">
+        <h2>Computer Information Science</h2>
+        <br>
+        <section class="sectionContainer">
+            <h3>Classes that I have taken include:</h3>
+            <br>
+            <div class="classContainer">
+                <div class="classGrid">
+                    <div class="box">
+                        <h3>Technology & Digital Literacy</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Cloud Fundamentals</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Web Development</h2>
+                    </div>
+                    <div class="box">
+                        <h3>C# Programming</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Systems Analaysis & Design</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Python Programming</h2>
+                    </div>
+                </div>
             </div>
-            <div id="bigLetter">D</div>
-        </div>
+        </section>
+        <br>
+        <section class="sectionContainer">
+            <h3>Classes that I plan to take include:</h3>
+            <br>
+            <div class="classContainer">
+                <div class="classGrid">
+                    <div class="box">
+                        <h3>Java Programming</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Database and Query</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Mobile App Development</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Advanced C# Programming</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Advanced Java Programming</h2>
+                    </div>
+                    <div class="box">
+                        <h3>Advanced Web Development</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="sectionContainer">
+            <h3>Certifications</h3>
+            <br>
+            <div class="classGrid">
+                <div class="box">
+                    <img src="images/pythocert.PNG" alt="Python">
+                </div>
+                <div class="box">
+                    <img src="images/htmlcsscert.PNG" alt="HTML and CSS">
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div id="bottomLeftContainer">
-        <div id="bottomLeftTitle">All about me</div>
-        <div id="servicesLinkWrapper">
-            <a href="degree.html" id="serviceLink" data-link="Degree">
-                Degree
-                <div id="serviceLinkOverlay"></div>
-            </a>
-            <a href="#" id="bottomLeftSeperator"></a>
-            <a href="#" id="serviceLink" data-link="Projects">
-                Projects
-                <div id="serviceLinkOverlay"></div>
-            </a>
-            <a href="#" id="bottomLeftSeperator"></a>
-            <a href="#" id="serviceLink" data-link="Hobbies">
-                Hobbies
-                <div id="serviceLinkOverlay"></div>
-            </a>
-        </div>
-    </div>
+    <div id="cursor"></div>
   
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>

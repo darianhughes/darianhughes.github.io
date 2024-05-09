@@ -19,21 +19,6 @@ body{
     overflow-x: hidden;
 }
 
-#cursor{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 10px;
-    width: 10px;
-    background: #fff;
-    border-radius: 100px;
-    pointer-events: none;
-    transition: 0.6s cubic-bezier(0.02, 1.23, 0.98, 0.93);
-    mix-blend-mode: difference;
-    z-index: 99999999999999999999999999999999999999999999999999999999999999999999;
-}
-
 /* The styling of menu, navbar and logo starts */
 
 #navbar{
@@ -52,8 +37,8 @@ body{
     transform: translateY(-50%);
     left: 10px;
     font-size: 25px;
-    color: transparent;
-    -webkit-text-stroke: 1px #000;
+    color: #000;
+    -webkit-text-stroke: 1px #383d52;
     width: auto;
     user-select: none;
     transition: 0.6s ease;
@@ -61,8 +46,8 @@ body{
 }
 
 #logo:hover{
-    color: #000;
-    -webkit-text-stroke: 0px #000;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
 }
 
 #logo::before{
@@ -72,72 +57,10 @@ body{
     left: 0;
     width: 0%;
     height: 100%;
-    color: #000;
+    color: transparent;
     -webkit-text-stroke: 0px #383d52;
-    border-right: 1.5px solid #000;
     overflow: hidden;
-    animation: logo 2s linear infinite;
-}
-
-#loadOverlay{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 50%;
-    left: -50%;
-    transform: translate(-50%,-50%);
-    background: rgba(255, 255, 255, 0.433);
-    z-index: 1000000000;
-    backdrop-filter: blur(5px);
-}
-
-@keyframes logo {
-    0%{
-        width: 0%;
-    }
-    65%{
-        width: 100%
-    }
-}
-
-@keyframes loadText{
-    0%{
-        font-size: 70px;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%,-50%);
-        -webkit-text-stroke: 1px #868686;
-    }
-
-    95%{
-        font-size: 70px;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%,-50%);
-        -webkit-text-stroke: 1px #868686;
-    }
-
-    100%{
-        font-size: 25px;
-        top: 15px;
-        left: 10px;
-        transform: translate(0%,0%);
-        -webkit-text-stroke: 0.3px #868686;
-    }
-}
-
-@keyframes loadOverlay{
-    0%{
-        left: 50%;
-    }
-
-    80%{
-        left: 50%;
-    }
-
-    100%{
-        left: -50%;
-    }
+    animation: logo 2s;
 }
 
 #menuIcon{
@@ -547,14 +470,47 @@ a{
 }
 
 #topLeftContainer{
-    position: absolute;
+    position: relative;
     top: 100px;
-    left: 50px;
-    max-width: 70vw;
-    max-height: 70vh;
     padding: 20px;
 }
 
+#topLeftContainer h2 {
+    color: tan;
+    -webkit-text-stroke: 1px #000;
+}
+
+.sectionContainer {
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 1.5rem; 
+}
+
+.classGrid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.box{
+    background: #ddd;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 1.5rem; 
+}
+
+.box h3 {
+    text-align: center;
+}
+
+.box:hover {
+    background-color: lightgray;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 #bubbleWrapper{
     width: 80vw;
@@ -648,6 +604,7 @@ a{
 }
 
 /* Media queries */
+
 @media screen and (min-width: 1024px) {
     /* Desktop View */
 

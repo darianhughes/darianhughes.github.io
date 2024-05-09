@@ -10,13 +10,6 @@ $('#menuClick').on('change', function() {
     }
 });
 
-$(document).on('mousemove', function(e){
-    $('#cursor').css({
-       left:  e.pageX,
-       top:   e.pageY
-    });
-});
-
 $('#menuIcon').on('mouseover', function(){
     $('#cursor').css({
         width: '60px',

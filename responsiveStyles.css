@@ -1,0 +1,18 @@
+/* Media queries */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet View */
+    .classGrid{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .classGrid{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
