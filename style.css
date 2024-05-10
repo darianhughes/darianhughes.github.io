@@ -537,6 +537,26 @@ a{
     width: 50%;
 }
 
+table th, td{
+    border: 1px solid;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    height: 30px;
+    width: 20px;
+    background-color:  #ddd;
+}
+
+.atWork {
+    background-color: darkgray;
+}
+
 #bubbleWrapper{
     width: 80vw;
     height: 80vh;
