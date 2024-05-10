@@ -519,6 +519,24 @@ a{
     width: 50%;
 }
 
+.hobbiesGrid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.boxNoOutline{
+    background: #ddd;
+    padding: 1.5rem; 
+}
+
+.boxNoOutline img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 #bubbleWrapper{
     width: 80vw;
     height: 80vh;
@@ -620,6 +638,10 @@ a{
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* Tablet View */
     #menuLine {
+        display: none;
+    }
+
+    #contactsWrapper {
         display: none;
     }
 }

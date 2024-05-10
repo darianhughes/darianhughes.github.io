@@ -3,6 +3,7 @@
 // Assignment: Final Project - Online File
 // script.js
 
+//Navbar
 $('#menuClick').on('change', function() {
     if ($('#menuClick').is(':checked')) {
         $('.menuContainer').css('left', '50%');
@@ -15,74 +16,7 @@ $('#menuClick').on('change', function() {
     }
 });
 
-$('#menuIcon').on('mouseover', function(){
-    $('#cursor').css({
-        width: '60px',
-        height: '60px'
-    })
-})
-
-$('#menuIcon').on('mouseleave', function(){
-    $('#cursor').css({
-        width: '10px',
-        height: '10px'
-    })
-})
-
-$('.menuLink').on('mouseover', function(){
-    $('#cursor').css({
-        width: '0px',
-        height: '0px'
-    })
-})
-
-$('.menuLink').on('mouseleave', function(){
-    $('#cursor').css({
-        width: '10px',
-        height: '10px'
-    })
-})
-
-$('.contact').on('mouseover', function(){
-    $('#cursor').css({
-        width: '0px',
-        height: '0px'
-    })
-})
-
-$('.contact').on('mouseleave', function(){
-    $('#cursor').css({
-        width: '10px',
-        height: '10px'
-    })
-})
-
-$('#emailUsLink').on('mouseover', function(){
-    $('#cursor').css({
-        width: '30px',
-        height: '30px'
-    })
-})
-
-$('#emailUsLink').on('mouseleave', function(){
-    $('#cursor').css({
-        width: '10px',
-        height: '10px'
-    })
-})
-
-$(document).on('mousedown', () => {
-    $('#cursor').css({
-        transform: 'scale(1.5) translate(-25%,-25%)'
-    })
-})
-
-$(document).on('mouseup', () => {
-    $('#cursor').css({
-        transform: 'scale(1) translate(-50%,-50%)'
-    })
-})
-
+//Main page animation
 $(document).on('mousemove', e => {
     $('#bubble:nth-child(1)').css({
         top: (50 + e.pageY/300 + '%'),
