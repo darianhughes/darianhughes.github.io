@@ -15,6 +15,12 @@
 	<link rel="icon" href="images/favicon.png">
 	<link rel="shortcut-icon" href="favicon.png">
 	<title>Contact Me</title>
+
+    <script>
+        function emailSubmit() {
+          document.getElementByID("form").style.display="none";
+          document.getElementByID("formsubmitted").style.display="block"}
+    </script>
 </head>
 
 <body>
@@ -86,7 +92,21 @@
         </div>
     </div>
 
-
+    <div id="topLeftContainer">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
   
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
